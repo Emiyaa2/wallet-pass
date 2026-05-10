@@ -22,53 +22,51 @@
   "foregroundColor": "rgb(255, 255, 255)",
   "backgroundColor": "rgb(16, 185, 129)",
   "labelColor": "rgb(209, 250, 229)",
-  "boardingPass": {
+  "generic": {
     "headerFields": [
       {
-        "key": "h1",
-        "label": "GATE",
-        "value": "C18"
-      },
-      {
-        "key": "h2",
+        "key": "seat",
         "label": "SEAT",
         "value": "2A"
-      }
-    ],
-    "primaryFields": [
-      {
-        "key": "from",
-        "label": "Hakodate",
-        "value": "HKD"
       },
       {
-        "key": "to",
-        "label": "Nagoya",
-        "value": "NGO"
+        "key": "gate",
+        "label": "GATE",
+        "value": "B14"
       }
     ],
     "secondaryFields": [
       {
-        "key": "s1",
+        "key": "passenger",
         "label": "PASSENGER",
         "value": "Holder 3822"
       },
       {
-        "key": "s2",
+        "key": "flight",
         "label": "FLIGHT",
-        "value": "KA 120"
+        "value": "KA120"
       }
     ],
     "auxiliaryFields": [
       {
-        "key": "dep",
+        "key": "boards",
         "label": "BOARDS",
-        "value": "12:32"
+        "value": "21:32"
       },
       {
-        "key": "arr",
+        "key": "terminal",
+        "label": "TERM",
+        "value": "2"
+      },
+      {
+        "key": "group",
+        "label": "GROUP",
+        "value": "2"
+      },
+      {
+        "key": "arrives",
         "label": "ARRIVES",
-        "value": "18:42"
+        "value": "6:42"
       }
     ],
     "backFields": [
@@ -78,8 +76,7 @@
         "value": "Arrive at the gate at least 30 minutes before departure.",
         "dataDetectorTypes": []
       }
-    ],
-    "transitType": "PKTransitTypeAir"
+    ]
   },
   "logoText": "测试",
   "semantics": {
@@ -161,15 +158,11 @@
     "seats": [
       {
         "seatRow": "2",
-        "seatNumber": "A"
+        "seatNumber": "A",
+        "seatType": "Window"
       }
-    ],
-    "currentBoardingDate": "2026-05-10T04:32:13.446Z"
+    ]
   },
-  "preferredStyleSchemes": [
-    "semanticBoardingPass",
-    "boardingPass"
-  ],
   "barcodes": [
     {
       "format": "PKBarcodeFormatCode128",
@@ -178,6 +171,14 @@
       "altText": "KA 120 / 2A"
     }
   ],
+  "relevantDate": "2026-05-10T05:43:00.000Z",
+  "expirationDate": "2026-05-10T04:43:00.000Z",
   "webServiceURL": "https://example.invalid/passkit",
-  "authenticationToken": "0000000000000000"
+  "authenticationToken": "0000000000000000",
+  "locations": [
+    {
+      "longitude": 119.328243,
+      "latitude": 26.096074
+    }
+  ]
 }
